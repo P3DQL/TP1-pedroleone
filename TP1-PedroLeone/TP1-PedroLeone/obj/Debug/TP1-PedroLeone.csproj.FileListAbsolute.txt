@@ -1,0 +1,7 @@
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\bin\Debug\TP1-PedroLeone.exe.config
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\bin\Debug\TP1-PedroLeone.exe
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\bin\Debug\TP1-PedroLeone.pdb
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\obj\Debug\TP1-PedroLeone.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\obj\Debug\TP1-PedroLeone.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\obj\Debug\TP1-PedroLeone.exe
+C:\Users\Administrator\source\repos\TP1-PedroLeone\TP1-PedroLeone\obj\Debug\TP1-PedroLeone.pdb
