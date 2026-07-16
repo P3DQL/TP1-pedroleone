@@ -1,7 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
+/*Realizar un programa que represente una simulación de copos de nieve cayendo en la consola, utilizando el símbolo "*" para cada copo.
 
+El programa debe cumplir con las siguientes condiciones:
+Definir una clase Configuracion que almacene parámetros de la simulación, como la cantidad de filas, columnas y la velocidad de caída de los copos.
+Definir una clase Copo que modele el comportamiento de un copo de nieve. Cada copo debe tener una posición en la consola y un método para mostrarse y desplazarse hacia abajo.
+Usar una lista para administrar todos los copos activos durante la simulación.
+Implementar una lógica que controle la caída de los copos de nieve, evitando que se superpongan en la misma posición.
+Al completarse una fila con copos en todas las columnas, esta debe eliminarse para permitir que continúe la simulación.
+El programa debe ejecutarse en un ciclo continuo, simulando de manera animada la caída de los copos.
+*/
 class Configuracion
 {
     public int Filas;
@@ -52,7 +61,6 @@ class Program
 
         while (true)
         {
-            // Crear un nuevo copo
             int columna = r.Next(config.Columnas);
 
             bool ocupado = false;
@@ -70,7 +78,6 @@ class Program
                 copos.Add(new Copo(columna, 0));
             }
 
-            // Mover copos
             for (int i = 0; i < copos.Count; i++)
             {
                 if (copos[i].Y < config.Filas - 1)
@@ -94,7 +101,6 @@ class Program
                 }
             }
 
-            // Verificar filas completas
             for (int fila = config.Filas - 1; fila >= 0; fila--)
             {
                 int cantidad = 0;
@@ -113,10 +119,8 @@ class Program
 
                 if (cantidad == config.Columnas)
                 {
-                    // Eliminar fila
                     copos.RemoveAll(c => c.Y == fila);
 
-                    // Bajar las filas superiores
                     foreach (Copo c in copos)
                     {
                         if (c.Y < fila)
@@ -127,7 +131,6 @@ class Program
                 }
             }
 
-            // Dibujar
             Console.Clear();
 
             foreach (Copo c in copos)
